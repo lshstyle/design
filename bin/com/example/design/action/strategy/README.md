@@ -1,1 +1,1 @@
-������㷨�Ϳͻ��˷��룬����ͨ��Spring��̬��ע�벻ͬ��Strategy,ʵ�ֲ�ͬ���㷨��
+具体的算法和客户端分离，可以通过Spring动态的注入不同的Strategy,实现不同的算法。

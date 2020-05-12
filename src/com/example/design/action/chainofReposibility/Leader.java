@@ -36,8 +36,8 @@ class Director extends Leader {
 		// TODO Auto-generated method stub
 		
          if (request.getLeavDays()<3) {
-        	 System.out.println("Ա��:" + request.getName() + " �������:" + 
-                 request.getLeavDays() + " ���ԭ��:" + request.getReason());
+        	 System.out.println("员工:" + request.getName() + " 请假天数:" + 
+                 request.getLeavDays() + " 请假原因:" + request.getReason());
          } else {
         	 this.getNextLeader().aduit(request);
          }

@@ -27,7 +27,7 @@ class Audi extends Car {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("°ÂµÏ³µ");
+		System.out.println("å¥¥è¿ªè½¦");
 	}
 	
 }
@@ -37,7 +37,7 @@ class Byd extends Car {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("±ÈÑÇµÏ");
+		System.out.println("æ¯”äºšè¿ª");
 	}
 
 }
