@@ -3,7 +3,13 @@ package com.example.design.action.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConcreteMyAggregate {
+public interface MyAggregate {
+	void add(Object obj);
+	void remove(Object obj);
+	List<Object> getList();
+	MyIterator getIterator();
+}
+class ConcreteMyAggregate implements MyAggregate{
 
 	private List<Object> list = new ArrayList<Object>();
 
@@ -23,10 +29,10 @@ public class ConcreteMyAggregate {
 		this.list = list;
 	}
 
-	public MyIterator createIterator() {
+	public MyIterator getIterator() {
 		return new ConcreteIterator();
 	}
-
+	
 	private class ConcreteIterator implements MyIterator {
 
 		private int cursor;
@@ -69,5 +75,6 @@ public class ConcreteMyAggregate {
 			return list.get(cursor);
 		}
 	}
+	
 
 }
